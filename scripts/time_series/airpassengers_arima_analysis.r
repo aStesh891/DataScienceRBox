@@ -94,7 +94,7 @@ cv_results <- data.frame(
 # Plotly CV results
 ggplotly(ggplot(cv_results, aes(x = date, y = RMSE)) +
   geom_line(color = "steelblue", linewidth = 0.8) +
-  geom_point(color = "firebrick", size = 2, alpha = 0.7) +
+  geom_point(color = "darkgreen", size = 2, alpha = 0.7) +
   labs(title = "Rolling 2-Year Forecast RMSE (Cross-Validation)",
        subtitle = "ARIMA Model Performance Over Time",
        x = "Training Window End Date",
